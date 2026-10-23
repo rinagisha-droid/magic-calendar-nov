@@ -1,54 +1,73 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#F7EAF5">
-  <meta name="description" content="Волшебный календарь на ноябрь 2026: 30 символических подсказок Таро на каждый день. Подключи к Apple Calendar, Google Календарю или Яндекс Календарю.">
-  <title>Волшебный календарь • Ноябрь 2026</title>
+  <meta name="theme-color" content="#f9eff8">
+  <meta name="description" content="Волшебный календарь: открывай дату и читай свою символическую подсказку Таро. При желании добавь календарь на iPhone, в Google или Яндекс.">
+  <title>Волшебный календарь • Подсказка на каждый день</title>
   <style>
-    :root { --ink:#392741; --muted:#765e7d; --pink:#fff0f6; --purple:#77539b; --lav:#efe6fb; --line:#e9d9ed; }
+    :root { --ink:#36253f; --muted:#745d7d; --purple:#8054aa; --pink:#fff0f6; --lav:#f1e9fb; --line:#e8d5ec; }
     * { box-sizing:border-box; }
     html { scroll-behavior:smooth; }
-    body { margin:0; font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif; color:var(--ink); background:radial-gradient(circle at 15% 4%,#fce7f0 0%,transparent 38%),radial-gradient(circle at 90% 28%,#e9ddff 0%,transparent 42%),linear-gradient(160deg,#fffafc,#f5effb); min-height:100vh; }
-    .wrap { max-width:780px; padding:36px 18px 50px; margin:auto; }
-    .top { text-align:center; margin-bottom:26px; }
-    .pill { display:inline-block; border:1px solid #dfcce5; background:rgba(255,255,255,.72); color:#71527d; padding:10px 16px; border-radius:80px; font-size:13px; font-weight:650; letter-spacing:.02em; }
-    .spark { font-size:30px; margin:22px 0 7px; }
-    h1 { font-size:clamp(34px,6.8vw,58px); line-height:1.03; letter-spacing:-.035em; font-weight:800; margin:5px 0 15px; }
-    .lead { font-size:17px; line-height:1.55; max-width:580px; margin:0 auto; color:var(--muted); }
-    .panel { border:1px solid rgba(214,191,226,.75); background:rgba(255,255,255,.84); border-radius:26px; padding:29px; box-shadow:0 14px 50px rgba(94,64,111,.09); }
-    .smallhead { text-transform:uppercase; color:#82648f; letter-spacing:.13em; font-size:11px; font-weight:800; }
-    h2 { font-size:24px; line-height:1.2; margin:8px 0 12px; }
-    .buttons { display:grid; grid-template-columns:1fr; gap:11px; margin:23px 0 18px; }
-    .btn { display:flex; text-decoration:none; text-align:center; align-items:center; justify-content:center; gap:9px; border:1px solid transparent; min-height:60px; padding:14px 13px; border-radius:16px; font-size:15px; font-weight:800; line-height:1.25; cursor:pointer; transition:transform .15s,box-shadow .15s; font-family:inherit; }
-    .btn:focus-visible, .copy:focus-visible { outline:3px solid #a486ff; outline-offset:3px; }
-    .btn:hover { transform:translateY(-2px); }
-    .btn.ios { background:linear-gradient(130deg,#9b6dbd,#7652a2); box-shadow:0 5px 14px rgba(127,77,163,.15); color:white; }
-    .btn.google { background:#ffedf5; border-color:#ebcbdd; color:#603c67; }
-    .btn.yandex { background:#f2eafe; border-color:#d9c7e9; color:#603c67; }
-    .note { font-size:13px; color:#7e6b84; line-height:1.5; margin:0; }
-    .preview { margin-top:18px; padding:20px 22px; background:linear-gradient(140deg,#fff2f6,#f3eafe); border:1px solid #ead9ef; border-radius:21px; }
-    .preview-title { display:flex; gap:12px; justify-content:space-between; align-items:baseline; }
-    .day { font-weight:850; font-size:19px; }
-    .date { color:#886d90; font-size:13px; font-weight:650; }
-    .preview p { line-height:1.65; font-size:14px; margin:12px 0 0; }
-    .preview strong { color:#684c7b; }
-    .sections { display:grid; gap:16px; margin-top:18px; }
-    .steps { margin:12px 0 0; padding-left:21px; line-height:1.7; color:#57425b; font-size:14px; }
+    body { margin:0; min-height:100vh; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif; color:var(--ink); background:radial-gradient(circle at 12% 3%,#fce6f1 0%,transparent 38%),radial-gradient(circle at 92% 30%,#e8dcff 0%,transparent 43%),linear-gradient(155deg,#fffbfd,#f4edfb); }
+    button,a { -webkit-tap-highlight-color:transparent; }
+    button:focus-visible, a:focus-visible, summary:focus-visible, input:focus-visible { outline:3px solid #9c7cdd; outline-offset:3px; }
+    .wrap { max-width:810px; padding:29px 17px 50px; margin:0 auto; }
+    .top { text-align:center; margin:4px auto 25px; }
+    .pill { display:inline-block; border:1px solid #e3d0eb; border-radius:45px; background:rgba(255,255,255,.78); color:#765485; padding:10px 16px; font-size:13px; font-weight:730; }
+    .spark { font-size:30px; margin:21px 0 6px; }
+    h1 { font-size:clamp(36px,7.1vw,60px); line-height:1.03; letter-spacing:-.035em; margin:4px 0 12px; font-weight:850; }
+    .lead { font-size:16px; line-height:1.56; max-width:590px; margin:auto; color:var(--muted); }
+    .panel { border:1px solid rgba(216,195,226,.82); background:rgba(255,255,255,.9); border-radius:25px; padding:28px; box-shadow:0 14px 40px rgba(94,64,111,.09); }
+    .smallhead { color:#855f98; letter-spacing:.12em; text-transform:uppercase; font-size:11px; font-weight:800; }
+    h2 { font-size:24px; line-height:1.18; margin:9px 0 9px; }
+    .note { font-size:13px; color:var(--muted); line-height:1.55; margin:0; }
+    .calendar-card { margin-top:23px; background:linear-gradient(155deg,#fff8fc,#f6f0ff); border:1px solid var(--line); border-radius:22px; padding:16px; }
+    .monthnav { display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:15px; }
+    .monthtitle { font-size:20px; font-weight:850; text-align:center; text-transform:capitalize; }
+    .navbtn { width:39px; height:39px; border:1px solid #dfcbe8; border-radius:12px; background:#fff; color:#714b8a; font-size:24px; cursor:pointer; flex:none; }
+    .navbtn:disabled { opacity:.32; cursor:default; }
+    .weekday,.days { display:grid; grid-template-columns:repeat(7,minmax(0,1fr)); gap:5px; }
+    .weekday { margin-bottom:5px; }
+    .weekday span { color:#826e89; text-align:center; font-size:12px; font-weight:700; padding:6px 0; }
+    .datebtn { aspect-ratio:1; min-width:0; border-radius:13px; background:#fff; border:1px solid #e8daeb; color:#53415b; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:3px; font-size:15px; font-weight:750; cursor:pointer; transition:background .15s,transform .15s; }
+    .datebtn:hover { transform:translateY(-1px); border-color:#ae83c5; }
+    .datebtn[aria-pressed="true"] { background:linear-gradient(145deg,#9362b9,#784da5); border-color:#784da5; color:white; box-shadow:0 4px 9px rgba(125,82,168,.16); }
+    .datebtn .dot { width:5px; height:5px; border-radius:100%; background:#b885d3; }
+    .datebtn[aria-pressed="true"] .dot { background:#fff; }
+    .datebtn:disabled { color:#ae9db4; border-color:transparent; background:rgba(255,255,255,.35); cursor:default; }
+    .blankday { min-height:1px; }
+    .loading { padding:18px; line-height:1.5; color:var(--muted); text-align:center; }
+    .reading { margin-top:18px; padding:23px; border-radius:21px; background:linear-gradient(140deg,#fff0f6,#f0e8fb); border:1px solid #e6d2ec; }
+    .reading-date { font-weight:750; color:#7e608a; font-size:13px; margin:0 0 7px; text-transform:capitalize; }
+    .reading h3 { font-size:22px; line-height:1.2; margin:0 0 14px; }
+    .reading-part { margin:12px 0; }
+    .reading-part strong { display:block; font-size:12px; text-transform:uppercase; color:#73548c; letter-spacing:.045em; margin-bottom:4px; }
+    .reading-part p { font-size:15px; line-height:1.55; margin:0; overflow-wrap:anywhere; }
+    .reading-foot { margin-top:17px; padding-top:12px; border-top:1px solid #dec7e6; color:#8b7394; line-height:1.45; font-size:12px; }
+    .sections { display:grid; gap:16px; margin-top:19px; }
+    .btns { display:grid; gap:10px; margin:18px 0 10px; }
+    .btn { display:flex; justify-content:center; align-items:center; min-height:56px; gap:8px; border:1px solid transparent; border-radius:15px; padding:13px; font-family:inherit; font-size:15px; font-weight:800; text-decoration:none; text-align:center; cursor:pointer; }
+    .btn.ios { background:linear-gradient(130deg,#9b6dbd,#7652a2); color:#fff; box-shadow:0 5px 14px rgba(127,77,163,.15); }
+    .btn.google { background:#ffedf5; color:#603c67; border-color:#ebcbdd; }
+    .btn.yandex { background:#f2eafe; color:#603c67; border-color:#d9c7e9; }
+    details.help { border:1px solid #ebdcf0; border-radius:14px; background:#fffafd; margin-top:10px; overflow:hidden; }
+    details.help summary { cursor:pointer; list-style:none; padding:14px; font-weight:750; color:#65477c; }
+    details.help summary::-webkit-details-marker { display:none; }
+    details.help summary::after { content:'＋'; float:right; font-size:18px; }
+    details.help[open] summary::after { content:'−'; }
+    .helpcontent { padding:0 14px 14px; }
+    .steps { padding-left:22px; line-height:1.65; font-size:14px; color:#584461; margin:4px 0 12px; }
     .steps li { margin:6px 0; }
-    .url-group { display:grid; grid-template-columns:minmax(0,1fr) auto; gap:9px; margin:16px 0 10px; }
-    .url { min-width:0; width:100%; border:1px solid #ddc9e8; border-radius:12px; background:#fff; padding:12px; font-size:12px; color:#614d6e; }
-    .copy { background:#eadcf5; border:1px solid #d8c4e8; border-radius:12px; padding:11px 15px; color:#523765; font-weight:750; cursor:pointer; }
-    .status { font-size:13px; color:#655171; min-height:18px; margin:4px 0 11px; }
-    .shared-url { margin-top:18px; padding:17px 18px; border:1px solid #ead9ef; border-radius:19px; background:#fff9fd; }
-    .shared-url label { display:block; font-size:14px; font-weight:750; margin-bottom:4px; }
-    .simplelink { color:#6b4599; text-decoration:underline; text-underline-offset:3px; font-weight:650; }
-    .foot { text-align:center; margin:25px auto 0; font-size:12px; color:#8a7391; max-width:560px; line-height:1.6; }
-    details { border-top:1px solid #eadbed; margin-top:17px; padding-top:13px; }
-    summary { cursor:pointer; font-weight:750; color:#6b4a82; font-size:14px; }
-    @media(max-width:560px) { .wrap{padding:24px 14px 36px;} .panel{padding:20px 16px;border-radius:21px;} .buttons{grid-template-columns:1fr;} h1{font-size:37px;} .lead{font-size:15px;} .url-group{grid-template-columns:1fr;} .copy{min-height:43px;} }
-    @media(prefers-reduced-motion:reduce) { html{scroll-behavior:auto;} .btn{transition:none;} }
+    .simplelink { color:#69439a; text-decoration:underline; text-underline-offset:3px; font-weight:650; }
+    .url-group { display:grid; grid-template-columns:minmax(0,1fr) auto; gap:9px; margin-top:12px; }
+    .url { min-width:0; width:100%; border:1px solid #ddc9e8; border-radius:11px; background:#fff; padding:12px; font-size:12px; color:#614d6e; }
+    .copy { padding:12px; border:1px solid #d8c4e8; border-radius:11px; background:#eadcf5; color:#523765; font-weight:750; cursor:pointer; }
+    .status { font-size:12px; color:#665477; min-height:16px; margin-top:7px; }
+    .foot { font-size:12px; line-height:1.6; max-width:620px; margin:25px auto 0; color:#89748f; text-align:center; }
+    @media(max-width:560px) { .wrap{padding:20px 12px 32px;} .panel{padding:20px 15px;border-radius:21px;} h1{font-size:38px;} .lead{font-size:15px;} .calendar-card{padding:10px;margin-top:19px;border-radius:18px;} .days,.weekday{gap:4px;} .datebtn{font-size:14px;border-radius:10px;} .weekday span{font-size:11px;} .reading{padding:19px 15px;} .reading h3{font-size:20px;} .url-group{grid-template-columns:1fr;} }
+    @media(prefers-reduced-motion:reduce) { html{scroll-behavior:auto;} .datebtn{transition:none;} }
   </style>
 </head>
 <body>
@@ -57,112 +76,201 @@
       <span class="pill">✦ Ноябрь 2026 · 30 подсказок · Бесплатно</span>
       <div class="spark" aria-hidden="true">🔮 ✧ 🌙</div>
       <h1>Волшебный<br>календарь</h1>
-      <p class="lead">Маленькая подсказка Таро на каждый день. Открывай обычный календарь в телефоне, читай вопрос к себе и выбирай один бережный шаг.</p>
+      <p class="lead">Выбери дату и открой подсказку Таро. Не нужно ничего устанавливать или регистрироваться.</p>
     </header>
 
-    <section class="panel" aria-labelledby="start-title">
-      <div class="smallhead">Подключение календаря</div>
-      <h2 id="start-title">Выбери свой календарь</h2>
-      <p class="note">Один волшебный календарь — три способа подключения. Подсказки появятся в выбранном приложении как события на весь день.</p>
-      <div class="buttons">
-        <a class="btn ios" id="ios-button" href="astro-calendar.ics">🍎 Apple Calendar (iPhone)</a>
-        <a class="btn google" href="#google-instructions">📅 Google Календарь</a>
-        <a class="btn yandex" href="#yandex-instructions">🗓️ Яндекс Календарь</a>
-      </div>
-      <p class="note">Для Apple Calendar нажми кнопку на iPhone. Для Google и Яндекса кнопки откроют короткую инструкцию; подписку по ссылке удобнее настроить на компьютере.</p>
-      <div class="shared-url">
-        <label for="calendar-url">Единая ссылка на календарь (.ics)</label>
-        <p class="note">Она подходит для всех трёх вариантов подключения.</p>
-        <div class="url-group">
-          <input class="url" type="text" id="calendar-url" readonly aria-label="Ссылка для подписки на календарь" value="Ссылка появится после публикации сайта">
-          <button class="copy" type="button" id="copy-button">Скопировать ссылку</button>
+    <section class="panel" aria-labelledby="read-title">
+      <div class="smallhead">Открой свою подсказку</div>
+      <h2 id="read-title">Выбери день ✨</h2>
+      <p class="note">Нажми на любую дату — карта дня, тема и совет сразу появятся ниже.</p>
+      <div class="calendar-card">
+        <div class="monthnav">
+          <button class="navbtn" id="prev-month" type="button" aria-label="Предыдущий месяц" disabled>‹</button>
+          <div class="monthtitle" id="month-label">Ноябрь 2026</div>
+          <button class="navbtn" id="next-month" type="button" aria-label="Следующий месяц" disabled>›</button>
         </div>
-        <div class="status" id="copy-status" aria-live="polite"></div>
+        <div class="weekday" aria-hidden="true"><span>Пн</span><span>Вт</span><span>Ср</span><span>Чт</span><span>Пт</span><span>Сб</span><span>Вс</span></div>
+        <div class="days" id="calendar-days" aria-label="Даты с подсказками"><p class="loading">Загружаем подсказки…</p></div>
       </div>
-      <div class="preview" aria-label="Пример записи в календаре">
-        <div class="preview-title"><span class="day">🦁 Сила</span><span class="date">5 ноября</span></div>
-        <p><strong>Тема:</strong> мягкая уверенность. Настойчивость не всегда означает давление.</p>
-        <p><strong>Вопрос:</strong> где ты пытаешься контролировать больше, чем нужно?</p>
-        <p><strong>Шаг:</strong> ответь спокойно там, где обычно торопишься спорить.</p>
-      </div>
+      <section class="reading" id="reading" aria-live="polite" aria-label="Подсказка на выбранную дату">
+        <p class="reading-date" id="reading-date">Ноябрь 2026</p>
+        <h3 id="reading-title">Выбери дату в календаре</h3>
+        <div id="reading-body"><p class="note">Здесь появится полная подсказка.</p></div>
+      </section>
     </section>
 
     <div class="sections">
-      <section class="panel" id="google-instructions" aria-labelledby="google-title">
-        <div class="smallhead">Google Календарь · Android и другие устройства</div>
-        <h2 id="google-title">Как добавить в Google</h2>
-        <ol class="steps">
-          <li>На <strong>компьютере</strong> открой <a class="simplelink" target="_blank" rel="noopener" href="https://calendar.google.com/">Google Календарь</a> под своим Google-аккаунтом.</li>
-          <li>Слева в разделе «Другие календари» нажми <strong>+</strong> → <strong>Добавить по URL</strong>.</li>
-          <li>Скопируй единую ссылку <strong>.ics</strong> из верхнего блока, вставь её в поле URL и нажми <strong>Добавить календарь</strong>.</li>
-          <li>Открой Google Календарь на телефоне с тем же аккаунтом. При необходимости включи отображение нового календаря.</li>
-        </ol>
-        <p class="note">Это подписка: добавленные позже события будут появляться после очередного обновления Google. Не путай с разовым импортом файла.</p>
-      </section>
-      <section class="panel" id="yandex-instructions" aria-labelledby="yandex-title">
-        <div class="smallhead">Яндекс Календарь · Android и другие устройства</div>
-        <h2 id="yandex-title">Как добавить в Яндекс</h2>
-        <ol class="steps">
-          <li>Открой <a class="simplelink" target="_blank" rel="noopener" href="https://calendar.yandex.ru/">Яндекс Календарь</a> на компьютере и войди в свой аккаунт.</li>
-          <li>Слева найди раздел <strong>«Подписки»</strong> и нажми <strong>«Добавить»</strong>.</li>
-          <li>Скопируй единую ссылку <strong>.ics</strong> из верхнего блока и вставь в поле <strong>«Адрес календаря»</strong>.</li>
-          <li>Назови календарь, выбери цвет и нажми <strong>«Создать»</strong>. Открой Яндекс Календарь на телефоне в том же аккаунте.</li>
-        </ol>
-        <p class="note">Выбирай именно подписку, не импорт. Яндекс обновляет подписные календари с задержкой — от нескольких часов до двух дней.</p>
-      </section>
-      <section class="panel" id="iphone-help" aria-labelledby="iphone-title">
-        <div class="smallhead">iPhone · Apple Calendar</div>
-        <h2 id="iphone-title">Как добавить на iPhone</h2>
-        <ol class="steps">
-          <li>Открой этот сайт на <strong>iPhone</strong> и нажми <strong>«Apple Calendar (iPhone)»</strong> вверху. Если появится предложение подписаться — подтверди.</li>
-          <li>Если кнопка не сработала, открой приложение <strong>«Календарь»</strong> → <strong>«Календари»</strong> → <strong>«Добавить»</strong> → <strong>«Добавить подписной календарь»</strong>.</li>
-          <li>Вставь единую ссылку <strong>.ics</strong> из верхнего блока, подтверди найденный календарь, выбери название и цвет.</li>
-        </ol>
-        <p class="note">Названия пунктов могут немного отличаться в зависимости от версии iOS. На совместимых версиях iOS можно сохранить подписку в iCloud.</p>
-      </section>
-      <section class="panel" aria-labelledby="download-title">
-        <div class="smallhead">Запасной способ</div>
-        <h2 id="download-title">Скачать файл .ics</h2>
-        <p class="note">Если подписка не подходит, можно скачать файл и импортировать его в совместимое приложение календаря. <strong>Важно:</strong> при разовом импорте будущие изменения не появятся автоматически.</p>
-        <p><a class="simplelink" href="astro-calendar.ics" download>↓ Скачать календарь на ноябрь 2026</a></p>
-        <details>
-          <summary>Почему это календарь, а не отдельное приложение?</summary>
-          <p class="note" style="margin-top:10px">Ничего дополнительно устанавливать не нужно: записи показываются прямо в привычном приложении календаря. Подписной календарь можно отключить в его настройках.</p>
+      <section class="panel" id="subscribe" aria-labelledby="subscribe-title">
+        <div class="smallhead">По желанию</div>
+        <h2 id="subscribe-title">Хочешь, чтобы подсказки были в твоём телефоне? 📲</h2>
+        <p class="note">Добавь их в привычный календарь один раз. Тогда их можно открывать в приложении без посещения сайта. Чтобы просто читать подсказки здесь, подключать ничего не нужно.</p>
+        <div class="btns">
+          <a class="btn ios" id="ios-button" href="astro-calendar.ics">🍎 Добавить в Apple Calendar (iPhone)</a>
+          <a class="btn google" href="#google-help" id="google-link">📅 Подключить Google Календарь</a>
+          <a class="btn yandex" href="#yandex-help" id="yandex-link">🗓️ Подключить Яндекс Календарь</a>
+        </div>
+        <details class="help" id="google-help">
+          <summary>Инструкция для Google Календаря</summary>
+          <div class="helpcontent">
+            <ol class="steps">
+              <li>На компьютере открой <a class="simplelink" href="https://calendar.google.com/" target="_blank" rel="noopener">Google Календарь</a> и войди в нужный аккаунт.</li>
+              <li>В разделе «Другие календари» нажми «+» → «Добавить по URL».</li>
+              <li>Скопируй ссылку ниже, вставь в поле URL и нажми «Добавить календарь».</li>
+              <li>Открой приложение на Android с тем же аккаунтом, включи отображение и синхронизацию подписки.</li>
+            </ol>
+          </div>
         </details>
+        <details class="help" id="yandex-help">
+          <summary>Инструкция для Яндекс Календаря</summary>
+          <div class="helpcontent">
+            <ol class="steps">
+              <li>На компьютере открой <a class="simplelink" href="https://calendar.yandex.ru/" target="_blank" rel="noopener">Яндекс Календарь</a>.</li>
+              <li>Слева в «Подписках» нажми «Добавить».</li>
+              <li>Скопируй ссылку ниже, вставь её как адрес календаря.</li>
+              <li>Укажи название и сохрани подписку. Входи на телефоне под тем же аккаунтом.</li>
+            </ol>
+          </div>
+        </details>
+        <details class="help" id="iphone-help">
+          <summary>Если кнопка iPhone не сработала</summary>
+          <div class="helpcontent">
+            <ol class="steps">
+              <li>Открой приложение «Календарь» на iPhone → «Календари» → «Добавить календарь» → «Добавить подписной календарь».</li>
+              <li>Вставь ссылку ниже и подтверди добавление.</li>
+              <li>Открой ноябрь и нажми на день, чтобы прочитать запись (при необходимости «Развернуть»).</li>
+            </ol>
+          </div>
+        </details>
+        <div style="margin-top:17px;padding:16px;border:1px solid #ead9ef;border-radius:16px;background:#fff9fd">
+          <label for="calendar-url" style="font-size:13px;font-weight:750">Ссылка для подписки на календарь (.ics)</label>
+          <div class="url-group">
+            <input class="url" id="calendar-url" type="text" readonly aria-label="Ссылка на файл календаря">
+            <button class="copy" type="button" id="copy-button">Скопировать</button>
+          </div>
+          <div class="status" id="copy-status" aria-live="polite"></div>
+        </div>
+        <p class="note" style="margin-top:13px">Важно: при подписке новые записи обновляются не мгновенно — скорость зависит от сервиса. А этот сайт показывает содержимое файла календаря при каждом открытии.</p>
       </section>
     </div>
-
-    <footer class="foot">Подсказки основаны на символике Таро и предназначены для размышления, а не для предсказания событий. Эта версия — демонстрационный календарь на ноябрь 2026 года.</footer>
+    <footer class="foot">Подсказки основаны на символике карт Таро и помогают размышлять о своих действиях, но не предсказывают события. Сейчас опубликована демонстрационная версия на ноябрь 2026 года.</footer>
   </main>
   <script>
-    (function () {
-      var published = window.location.protocol === 'https:' || window.location.protocol === 'http:';
-      var fileUrl = published ? new URL('./astro-calendar.ics', window.location.href) : null;
+    (function(){
+      'use strict';
+      var fileUrl = new URL('./astro-calendar.ics', window.location.href);
+      var published = location.protocol === 'https:' || location.protocol === 'http:';
       var urlInput = document.getElementById('calendar-url');
       var iosButton = document.getElementById('ios-button');
-      var copyButton = document.getElementById('copy-button');
       var copyStatus = document.getElementById('copy-status');
-      if (published) {
-        urlInput.value = fileUrl.href;
-        iosButton.href = fileUrl.href.replace(/^https?:\/\//, 'webcal://');
-      } else {
-        urlInput.value = 'Ссылка станет доступна после публикации на GitHub Pages';
-        iosButton.addEventListener('click', function(e) { e.preventDefault(); alert('Сначала опубликуй сайт на GitHub Pages.'); });
+      urlInput.value = published ? fileUrl.href : 'Ссылка станет доступна после публикации на GitHub Pages';
+      if (published) iosButton.href = fileUrl.href.replace(/^https?:\/\//,'webcal://');
+      else iosButton.addEventListener('click',function(e){e.preventDefault();alert('Сначала опубликуй сайт на GitHub Pages.');});
+      document.getElementById('copy-button').addEventListener('click', async function(){
+        if(!published){copyStatus.textContent='Сначала опубликуй сайт.';return;}
+        try{
+          if(navigator.clipboard && window.isSecureContext) await navigator.clipboard.writeText(fileUrl.href);
+          else {urlInput.focus();urlInput.select();if(!document.execCommand('copy')) throw new Error('copy unavailable');}
+          copyStatus.textContent='✓ Ссылка скопирована';
+        }catch(e){urlInput.focus();urlInput.select();copyStatus.textContent='Выделили ссылку. Скопируй её вручную.';}
+      });
+      function unescapeICS(s){
+        return s.replace(/\\[nN]/g,'\n').replace(/\\([,;\\])/g,'$1');
       }
-      copyButton.addEventListener('click', async function () {
-        if (!published) { copyStatus.textContent = 'Сначала опубликуй сайт на GitHub Pages.'; return; }
-        try {
-          if (navigator.clipboard && window.isSecureContext) {
-            await navigator.clipboard.writeText(fileUrl.href);
-          } else {
-            urlInput.focus(); urlInput.select();
-            if (!document.execCommand('copy')) throw new Error('Copy not available');
+      function loadEvents(raw){
+        var lines=raw.replace(/\r\n/g,'\n').replace(/\r/g,'\n').split('\n');
+        var unfolded=[];
+        lines.forEach(function(line){
+          if(/^[ \t]/.test(line) && unfolded.length) unfolded[unfolded.length-1]+=line.substring(1);
+          else unfolded.push(line);
+        });
+        var events={}, event=null;
+        unfolded.forEach(function(line){
+          if(line==='BEGIN:VEVENT'){event={};return;}
+          if(line==='END:VEVENT'){
+            if(event && event.date)events[event.date]=event;
+            event=null;return;
           }
-          copyStatus.textContent = '✓ Ссылка скопирована. Вставь её в выбранный календарь.';
-        } catch (err) {
-          urlInput.focus(); urlInput.select();
-          copyStatus.textContent = 'Выделили ссылку. Скопируй её вручную.';
+          if(!event)return;
+          var sep=line.indexOf(':'); if(sep<0)return;
+          var field=line.substring(0,sep).split(';')[0];
+          var value=unescapeICS(line.substring(sep+1));
+          if(field==='DTSTART' && /^\d{8}$/.test(value))event.date=value;
+          if(field==='SUMMARY')event.title=value;
+          if(field==='DESCRIPTION')event.description=value;
+        });
+        return events;
+      }
+      var days=document.getElementById('calendar-days');
+      var dateHeading=document.getElementById('reading-date');
+      var titleHeading=document.getElementById('reading-title');
+      var body=document.getElementById('reading-body');
+      var monthLabel=document.getElementById('month-label');
+      var prev=document.getElementById('prev-month');
+      var next=document.getElementById('next-month');
+      var events={},months=[],monthIndex=0,chosen='';
+      function key(y,m,d){return String(y)+String(m).padStart(2,'0')+String(d).padStart(2,'0');}
+      function calendarDate(k){return new Date(Number(k.slice(0,4)),Number(k.slice(4,6))-1,Number(k.slice(6,8)),12);}
+      function readable(k){return new Intl.DateTimeFormat('ru-RU',{weekday:'long',day:'numeric',month:'long',year:'numeric'}).format(calendarDate(k));}
+      function el(tag,cls,txt){var node=document.createElement(tag);if(cls)node.className=cls;if(txt!==undefined)node.textContent=txt;return node;}
+      function showDay(k, shouldScroll){
+        chosen=k;
+        var entry=events[k];
+        dateHeading.textContent=readable(k);
+        titleHeading.textContent=entry ? entry.title : 'Нет подсказки на эту дату';
+        body.replaceChildren();
+        if(entry){
+          var names={'Аркан / карта':'Карта','Тема дня':'Тема дня','Подсказка':'Подсказка','Вопрос себе':'Вопрос к себе','Маленький шаг':'Маленький шаг'};
+          entry.description.split('\n').map(function(x){return x.trim();}).filter(Boolean).forEach(function(line){
+            var match=line.match(/^([^:]+):\s*(.*)$/);
+            if(!match || !names[match[1]])return;
+            var part=el('div','reading-part');
+            part.append(el('strong','',names[match[1]]),el('p','',match[2]));
+            body.append(part);
+          });
+          body.append(el('div','reading-foot','Символическая подсказка для размышления, а не предсказание событий.'));
         }
+        days.querySelectorAll('.datebtn').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.key===k?'true':'false');});
+        if(shouldScroll) document.getElementById('reading').scrollIntoView({behavior:'smooth',block:'start'});
+      }
+      function renderMonth(){
+        var mk=months[monthIndex],year=Number(mk.slice(0,4)),month=Number(mk.slice(4,6));
+        monthLabel.textContent=new Intl.DateTimeFormat('ru-RU',{month:'long',year:'numeric'}).format(new Date(year,month-1,1));
+        prev.disabled=monthIndex===0;next.disabled=monthIndex>=months.length-1;
+        days.replaceChildren();
+        var start=(new Date(year,month-1,1).getDay()+6)%7;
+        for(var p=0;p<start;p++)days.append(el('span','blankday'));
+        var maxDay=new Date(year,month,0).getDate();
+        for(var d=1;d<=maxDay;d++){
+          var k=key(year,month,d);
+          var b=el('button','datebtn');b.type='button';b.dataset.key=k;
+          b.setAttribute('aria-pressed',k===chosen?'true':'false');
+          b.setAttribute('aria-label','Подсказка на '+d+' '+monthLabel.textContent);
+          b.append(el('span','',String(d)));
+          if(events[k])b.append(el('span','dot'));
+          else b.disabled=true;
+          b.addEventListener('click',function(){showDay(this.dataset.key,true);});
+          days.append(b);
+        }
+      }
+      prev.addEventListener('click',function(){if(monthIndex>0){monthIndex--;chosen=Object.keys(events).filter(function(k){return k.slice(0,6)===months[monthIndex];})[0];renderMonth();showDay(chosen);}});
+      next.addEventListener('click',function(){if(monthIndex<months.length-1){monthIndex++;chosen=Object.keys(events).filter(function(k){return k.slice(0,6)===months[monthIndex];})[0];renderMonth();showDay(chosen);}});
+      ['google','yandex'].forEach(function(provider){
+        document.getElementById(provider+'-link').addEventListener('click',function(){document.getElementById(provider+'-help').open=true;});
+      });
+      fetch(fileUrl.href,{cache:'no-cache'}).then(function(response){if(!response.ok)throw new Error('HTTP '+response.status);return response.text();}).then(function(raw){
+        events=loadEvents(raw);
+        var keys=Object.keys(events).sort();
+        if(!keys.length)throw new Error('В файле нет событий на весь день');
+        months=Array.from(new Set(keys.map(function(k){return k.slice(0,6);}))).sort();
+        var now=new Date(),today=key(now.getFullYear(),now.getMonth()+1,now.getDate());
+        chosen=events[today]?today:keys.find(function(k){return k>=today;})||keys[0];
+        monthIndex=months.indexOf(chosen.slice(0,6));
+        renderMonth();showDay(chosen);
+      }).catch(function(e){
+        days.replaceChildren(el('p','loading','Не удалось загрузить подсказки. Обнови страницу или попробуй позже.'));
+        titleHeading.textContent='Не удалось открыть календарь';
+        body.replaceChildren(el('p','note','Проверь, что рядом с index.html на сайте лежит файл astro-calendar.ics.'));
+        console.error('Calendar reading error:',e);
       });
     })();
   </script>
